@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# ABLS2-8.000MHZ-D4Y-T
+#
+DEF ABLS2-8.000MHZ-D4Y-T U 0 40 Y Y 1 L N
+F0 "U" -200 140 50 H V L CNN
+F1 "ABLS2-8.000MHZ-D4Y-T" -200 -200 50 H V L CNN
+F2 "XTAL1140X470X330" 0 0 50 H I L CNN
+F3 "0.25 USD" 0 0 50 H I L CNN "Price"
+F4 "ABLS2-8.000MHZ-D4Y-T" 0 0 50 H I L CNN "MP"
+F5 "Good" 0 0 50 H I L CNN "Availability"
+F6 "Crystal 8MHz Ø·Â¢Ø¢Â±30ppm (Tol) Ø·Â¢Ø¢Â±30ppm (Stability) 18pF FUND 80Ohm 2-Pin HC-49/US SMD T/R" 0 0 50 H I L CNN "Description"
+F7 "None" 0 0 50 H I L CNN "Package"
+F8 "Abracon" 0 0 50 H I L CNN "MF"
+DRAW
+P 2 0 0 6 40 0 100 0 N
+P 2 0 0 6 -100 0 -40 0 N
+P 2 0 0 10 -15 60 -15 -60 N
+P 2 0 0 10 -15 -60 15 -60 N
+P 2 0 0 10 15 -60 15 60 N
+P 2 0 0 10 15 60 -15 60 N
+P 2 0 0 10 40 70 40 -70 N
+P 2 0 0 10 -40 70 -40 -70 N
+X 2 2 300 0 200 L 40 40 0 0 P 
+X 1 1 -300 0 200 R 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
