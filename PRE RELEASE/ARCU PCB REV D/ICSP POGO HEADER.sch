@@ -1,0 +1,169 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:UX60-MB-5ST
+LIBS:MPU-9250
+LIBS:MPL3115A2
+LIBS:MCP6L71T-E_SN
+LIBS:INA219AID
+LIBS:ESP8266
+LIBS:DM3CS-SF
+LIBS:DIY UX60
+LIBS:AZ1117
+LIBS:ABM3B-8.000MHZ-B2-T
+LIBS:ABLS2-8.000MHZ-D4Y-T
+LIBS:1760510000
+LIBS:ICSP POGO HEADER-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X05 P2
+U 1 1 58175E3E
+P 5750 3550
+F 0 "P2" H 5750 3850 50  0000 C CNN
+F 1 "CONN_02X05" H 5750 3250 50  0000 C CNN
+F 2 "Connect:IDC_Header_Straight_10pins" H 5750 2350 50  0001 C CNN
+F 3 "" H 5750 2350 50  0000 C CNN
+	1    5750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L DM3CS-SF P1
+U 1 1 58175F09
+P 4700 3600
+F 0 "P1" H 4600 4250 50  0000 L CNN
+F 1 "DM3CS-SF" H 4600 2850 50  0000 L CNN
+F 2 "" H 4700 3600 50  0001 L CNN
+F 3 "None" H 4700 3600 50  0001 L CNN
+F 4 "Conn Micro SD Card HDR 8 POS 1.1mm Solder RA SMD Embossed T/R 0.5A" H 4700 3600 50  0001 L CNN "Description"
+F 5 "DM3CS-SF" H 4700 3600 50  0001 L CNN "MP"
+F 6 "1.10 USD" H 4700 3600 50  0001 L CNN "Price"
+F 7 "Good" H 4700 3600 50  0001 L CNN "Availability"
+F 8 "Hirose" H 4700 3600 50  0001 L CNN "MF"
+	1    4700 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 3350 0    47   BiDi ~ 0
+MOSI
+Text GLabel 5400 3550 0    47   Output ~ 0
+RESET
+Text GLabel 5400 3650 0    47   BiDi ~ 0
+SCK
+Text GLabel 5400 3750 0    47   BiDi ~ 0
+MISO
+$Comp
+L VCC #PWR01
+U 1 1 58175FE2
+P 6100 3350
+F 0 "#PWR01" H 6100 3200 50  0001 C CNN
+F 1 "VCC" H 6100 3500 50  0000 C CNN
+F 2 "" H 6100 3350 50  0000 C CNN
+F 3 "" H 6100 3350 50  0000 C CNN
+	1    6100 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5817600A
+P 6100 3750
+F 0 "#PWR02" H 6100 3500 50  0001 C CNN
+F 1 "GND" H 6100 3600 50  0000 C CNN
+F 2 "" H 6100 3750 50  0000 C CNN
+F 3 "" H 6100 3750 50  0000 C CNN
+	1    6100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3450 6000 3750
+Connection ~ 6000 3550
+Connection ~ 6000 3650
+Wire Wire Line
+	6000 3750 6100 3750
+Wire Wire Line
+	6000 3350 6100 3350
+Wire Wire Line
+	5400 3350 5500 3350
+Wire Wire Line
+	5400 3550 5500 3550
+Wire Wire Line
+	5400 3650 5500 3650
+Wire Wire Line
+	5400 3750 5500 3750
+$Comp
+L VCC #PWR03
+U 1 1 58176097
+P 4300 3100
+F 0 "#PWR03" H 4300 2950 50  0001 C CNN
+F 1 "VCC" H 4300 3250 50  0000 C CNN
+F 2 "" H 4300 3100 50  0000 C CNN
+F 3 "" H 4300 3100 50  0000 C CNN
+	1    4300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3100 4400 3100
+$Comp
+L GND #PWR04
+U 1 1 581760E5
+P 4300 4100
+F 0 "#PWR04" H 4300 3850 50  0001 C CNN
+F 1 "GND" H 4300 3950 50  0000 C CNN
+F 2 "" H 4300 4100 50  0000 C CNN
+F 3 "" H 4300 4100 50  0000 C CNN
+	1    4300 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4100 4400 4100
+Text GLabel 4300 3300 0    47   BiDi ~ 0
+MOSI
+Text GLabel 4300 3400 0    47   BiDi ~ 0
+SCK
+Text GLabel 4300 3600 0    47   BiDi ~ 0
+MISO
+Wire Wire Line
+	4300 3600 4400 3600
+Wire Wire Line
+	4400 3400 4300 3400
+Wire Wire Line
+	4300 3300 4400 3300
+$EndSCHEMATC

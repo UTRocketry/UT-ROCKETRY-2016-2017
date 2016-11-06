@@ -1,0 +1,187 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:UX60-MB-5ST
+LIBS:MPU-9250
+LIBS:MPL3115A2
+LIBS:MCP6L71T-E_SN
+LIBS:INA219AID
+LIBS:ESP8266
+LIBS:DM3CS-SF
+LIBS:DIY UX60
+LIBS:AZ1117
+LIBS:ABM3B-8.000MHZ-B2-T
+LIBS:ABLS2-8.000MHZ-D4Y-T
+LIBS:1760510000
+LIBS:ARCU ICSP REV A RELEASE-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "University of Toledo Rocketry Club"
+Date "2016-11-03"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DM3CS-SF P1
+U 1 1 581A1766
+P 5550 3800
+F 0 "P1" H 5450 4450 50  0000 L CNN
+F 1 "MicroSD" H 5450 3050 50  0000 L CNN
+F 2 "UT ROCKETRY MOD:MicroSD" H 5550 3800 50  0001 L CNN
+F 3 "Good" H 5550 3800 50  0001 L CNN
+F 4 "None" H 5550 3800 50  0001 L CNN "Package"
+F 5 "DM3CS-SF" H 5550 3800 50  0001 L CNN "MP"
+F 6 "1.05 USD" H 5550 3800 50  0001 L CNN "Price"
+F 7 "Conn Micro SD Card HDR 8 POS 1.1mm Solder RA SMD Embossed T/R 0.5A" H 5550 3800 50  0001 L CNN "Description"
+F 8 "Hirose" H 5550 3800 50  0001 L CNN "MF"
+	1    5550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X05 P2
+U 1 1 581A17FC
+P 6850 3600
+F 0 "P2" H 6850 3900 50  0000 C CNN
+F 1 "ICSP" H 6850 3300 50  0000 C CNN
+F 2 "Connect:IDC_Header_Straight_10pins" H 6850 2400 50  0001 C CNN
+F 3 "" H 6850 2400 50  0000 C CNN
+	1    6850 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 3400 0    47   BiDi ~ 0
+MOSI
+Text GLabel 6500 3500 0    47   Output ~ 0
+RST
+Text GLabel 6500 3700 0    47   BiDi ~ 0
+SCK
+Text GLabel 6500 3800 0    47   BiDi ~ 0
+MISO
+$Comp
+L GND #PWR01
+U 1 1 581A18C1
+P 6500 3600
+F 0 "#PWR01" H 6500 3350 50  0001 C CNN
+F 1 "GND" V 6500 3400 50  0000 C CNN
+F 2 "" H 6500 3600 50  0000 C CNN
+F 3 "" H 6500 3600 50  0000 C CNN
+	1    6500 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 3600 6600 3600
+$Comp
+L GND #PWR02
+U 1 1 581A1913
+P 7100 3900
+F 0 "#PWR02" H 7100 3650 50  0001 C CNN
+F 1 "GND" H 7100 3750 50  0000 C CNN
+F 2 "" H 7100 3900 50  0000 C CNN
+F 3 "" H 7100 3900 50  0000 C CNN
+	1    7100 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 7100 3600
+Connection ~ 7100 3700
+Connection ~ 7100 3800
+Wire Wire Line
+	6500 3700 6600 3700
+Wire Wire Line
+	6500 3800 6600 3800
+Wire Wire Line
+	6500 3500 6600 3500
+Wire Wire Line
+	6600 3400 6500 3400
+Text GLabel 5150 3500 0    47   BiDi ~ 0
+MOSI
+Wire Wire Line
+	7100 3500 7100 3900
+$Comp
+L VDD #PWR03
+U 1 1 581A1A4E
+P 7100 3300
+F 0 "#PWR03" H 7100 3150 50  0001 C CNN
+F 1 "VDD" H 7100 3450 50  0000 C CNN
+F 2 "" H 7100 3300 50  0000 C CNN
+F 3 "" H 7100 3300 50  0000 C CNN
+	1    7100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3400 7100 3300
+$Comp
+L VDD #PWR04
+U 1 1 581A1A73
+P 5250 3200
+F 0 "#PWR04" H 5250 3050 50  0001 C CNN
+F 1 "VDD" H 5250 3350 50  0000 C CNN
+F 2 "" H 5250 3200 50  0000 C CNN
+F 3 "" H 5250 3200 50  0000 C CNN
+	1    5250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3200 5250 3300
+$Comp
+L GND #PWR05
+U 1 1 581A1A99
+P 5250 4400
+F 0 "#PWR05" H 5250 4150 50  0001 C CNN
+F 1 "GND" H 5250 4250 50  0000 C CNN
+F 2 "" H 5250 4400 50  0000 C CNN
+F 3 "" H 5250 4400 50  0000 C CNN
+	1    5250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4400 5250 4300
+Text GLabel 5150 3800 0    47   BiDi ~ 0
+MISO
+Text GLabel 5150 3600 0    47   BiDi ~ 0
+SCK
+Wire Wire Line
+	5150 3500 5250 3500
+Wire Wire Line
+	5250 3600 5150 3600
+Wire Wire Line
+	5150 3800 5250 3800
+NoConn ~ 5250 4100
+NoConn ~ 5250 3900
+Text GLabel 5150 4000 0    47   Input ~ 0
+RST
+Wire Wire Line
+	5150 4000 5250 4000
+$EndSCHEMATC
