@@ -16,7 +16,8 @@ analyzed post flight to verify the roll of the rocket.
 
 The final form of the ARCU is implemented as a custom printed circuit board (PCB). However since the ARCU 
 uses parts available from Sparkfun, the ARCU can be assembled easily from off the shelf components either 
-on a breadboard or using protyping board.
+on a breadboard or using protyping board.Released versions of the ARCU PCB, ARCU ICSP tool, and the Backup
+Breakout version are available in the "RELEASE" sub folder.
 
 The University of Toledo Rocketry Club learned most of the information appparent in the design and construction 
 of the ARCU through the internet. If it wasn't for websites like Adafruit or Sparkfun, the ARCU project would 
