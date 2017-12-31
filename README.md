@@ -26,3 +26,17 @@ of the ARCU through the internet. If it wasn't for websites like Adafruit or Spa
 not be able to be completed. Knowing this, the University of Toledo Rocketry Club has made all designs of the 
 ARCU available online for public access so that others can learn from the project. The ARCU is licensed under 
 the GPL 3.0 license and is Open Source Hardware and Software.
+
+## Revision History ##
+### ATMega32U4 REV A ###
+- This version had issues with USB connectivity and flashing the bootloader
+
+### ATMega32U4 REV B ###
+- This version attempted fix issues with the USB in the previous version, however the fixes were unsuccessful
+- THe issues may have been due to the flashing tool that was used for the bootloader
+
+### ESP8266 REV A ###
+- This board was mostly functional with the exception of the interrupt pin on the 4 pin header being non-functional
+
+### ICSP Tool ###
+- This was designed to flash the bootloader on the boards running the ATMega32U4. Pinouts for the ICSP header are wrong and backwards
