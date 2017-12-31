@@ -40,3 +40,4 @@ the GPL 3.0 license and is Open Source Hardware and Software.
 
 ### ICSP Tool ###
 - This was designed to flash the bootloader on the boards running the ATMega32U4. Pinouts for the ICSP header are wrong and backwards
+- This tool is printed at the same thickness as a standard micro SD card and is designed to fit into a micro SD card slot.
